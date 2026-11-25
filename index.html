@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpine Consulting LLC | Custom CRM systems for service businesses</title>
+<meta name="description" content="Alpine Consulting builds custom CRM systems that let employees, managers and owners focus on what matters most, while growing your reputation and online presence.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314332B'/%3E%3Cpath d='M5 24 13 11l4 6 3-4 7 11z' fill='%23F4F1EA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12201C;--pine:#14332B;--pine2:#1E4A3E;--moss:#3D6B5A;--snow:#F4F1EA;--paper:#FBFAF6;--line:#DCD7CB;--muted:#55615C;--glacier:#CFE2DE;--ember:#C8582B;--ember2:#A9461F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--snow);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--pine2)}a:hover{color:var(--ember2)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.04}
+h2{font-size:clamp(32px,4.2vw,46px);line-height:1.1}
+h3{font-size:22px;line-height:1.25}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(5vw,20px)}
+.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);margin-bottom:16px}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.solid{background:var(--ember);color:#fff}.btn.solid:hover{background:var(--ember2);color:#fff}
+.btn.ghost{border:1.5px solid currentColor;color:var(--snow)}.btn.ghost:hover{color:var(--glacier)}
+header.top{position:sticky;top:0;z-index:10;background:rgba(244,241,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:600 21px Fraunces,Georgia,serif;min-height:44px}
+.brand small{font:600 11px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);display:block;margin-top:-2px}
+nav.main{display:flex;gap:6px;flex-wrap:wrap}
+nav.main a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;padding:10px 12px;border-radius:8px}
+nav.main a:hover{background:#E9E5DA;color:var(--ink)}
+.hero{background:var(--pine);color:var(--snow);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center;padding-top:88px;padding-bottom:120px;position:relative;z-index:1}
+.hero .eyebrow{color:#9CC7BA}
+.hero p.lead{color:#C9D8D2;margin-top:22px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.ridge{position:absolute;left:0;right:0;bottom:0;width:100%;height:170px;z-index:0}
+.stack{display:grid;gap:14px;position:relative}
+.card{background:var(--paper);color:var(--ink);border-radius:18px;padding:18px 20px;box-shadow:0 18px 40px rgba(5,20,15,.28)}
+.card .who{display:flex;align-items:center;justify-content:space-between;font:700 12px Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--moss)}
+.card .who span.tag{background:var(--glacier);color:var(--pine);border-radius:999px;padding:4px 10px;letter-spacing:.04em}
+.card b{display:block;font:600 19px/1.35 Fraunces,Georgia,serif;margin-top:6px}
+.card ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px;font-size:15px;color:var(--muted)}
+.card li{display:flex;gap:8px;align-items:flex-start}
+.card li:before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--moss);margin-top:9px}
+.card:nth-child(2){margin-left:36px}.card:nth-child(3){margin-left:72px}
+.sample{font-size:12px;color:#9CC7BA;margin-top:2px;text-align:right}
+section.band{padding:104px 0}
+section.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:48px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:48px}
+.tile{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;gap:12px;align-content:start}
+section.alt .tile{background:var(--snow)}
+.tile p{color:var(--muted);font-size:16px}
+.ico{width:46px;height:46px;border-radius:12px;background:var(--pine);display:grid;place-items:center;color:var(--glacier)}
+.role{border-top:4px solid var(--pine)}
+.role:nth-child(2){border-top-color:var(--moss)}.role:nth-child(3){border-top-color:var(--ember)}
+.role ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:16px;display:grid;gap:6px}
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:s}
+.steps li{counter-increment:s;border-top:2px solid var(--pine);padding-top:18px;display:grid;gap:8px}
+.steps li:before{content:"0" counter(s);font:600 15px Inter,sans-serif;color:var(--ember2);letter-spacing:.08em}
+.steps p{color:var(--muted);font-size:16px}
+.dark{background:var(--pine);color:var(--snow)}
+.dark .eyebrow{color:#9CC7BA}.dark .lead{color:#C9D8D2}
+.dark .tile{background:var(--pine2);border-color:#2F6152;color:var(--snow)}
+.dark .tile p{color:#C9D8D2}
+.dark .ico{background:var(--snow);color:var(--pine)}
+.pill{display:inline-block;font:600 13px Inter,sans-serif;color:var(--pine);background:var(--glacier);border-radius:999px;padding:5px 12px;width:max-content}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.checks li{display:grid;grid-template-columns:28px 1fr;gap:12px}
+.checks svg{margin-top:3px}
+.checks b{display:block;font-size:17px}
+.checks span{color:var(--muted);font-size:16px}
+.contact{background:var(--ink);color:var(--snow);border-radius:28px;padding:56px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:center}
+.contact .lead{color:#C9D8D2}
+.contact address{font-style:normal;color:#C9D8D2;font-size:16px;line-height:1.7}
+.contact address a{color:#fff}
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+@media(max-width:900px){
+.hero .wrap,.split,.contact{grid-template-columns:1fr}
+.hero .wrap{padding-top:56px;padding-bottom:140px;gap:40px}
+.grid3,.grid2{grid-template-columns:1fr}
+.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card:nth-child(2),.card:nth-child(3){margin-left:0}
+.contact{padding:36px 24px}
+section.band{padding:72px 0}
+}
+@media(max-width:520px){.steps{grid-template-columns:1fr}nav.main{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Alpine Consulting home">
+   <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#14332B"/><path d="M5 24 13 11l4 6 3-4 7 11z" fill="#F4F1EA"/><path d="m13 11 2.2 3.4-2.2-1-2 1.6z" fill="#C8582B"/></svg>
+   <span>Alpine Consulting<small>Custom CRM systems</small></span>
+  </a>
+  <nav class="main" aria-label="Main">
+   <a href="#people">Who it helps</a>
+   <a href="#build">What we build</a>
+   <a href="#how">How we work</a>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Custom CRM systems for service businesses</p>
+   <h1>Software that lets your people focus on what matters most.</h1>
+   <p class="lead">Alpine Consulting designs and builds custom CRM systems for owner-run service businesses. We automate the reminders, follow-up, scheduling and reporting that bury small teams, so employees, managers and owners can do their best work while your reputation and online presence grow.</p>
+   <div class="ctas">
+    <a class="btn solid" href="#contact">Start a conversation</a>
+    <a class="btn ghost" href="#build">See what we build</a>
+   </div>
+  </div>
+  <div>
+   <div class="stack" role="img" aria-label="Sample screens: a crew member's day, a manager's approvals and an owner's monthly results">
+    <div class="card"><div class="who">Employee<span class="tag">Today</span></div><b>Three jobs, every detail ready</b><ul><li>Addresses, notes and photos on the phone</li><li>Reminders before each visit</li></ul></div>
+    <div class="card"><div class="who">Manager<span class="tag">This week</span></div><b>Schedule set, nothing slipping</b><ul><li>Follow-ups sent without chasing</li><li>Every open job and estimate in one view</li></ul></div>
+    <div class="card"><div class="who">Owner<span class="tag">This month</span></div><b>Reviews, repeat customers, cash in</b><ul><li>New reviews and referrals tracked</li><li>The numbers that matter on one page</li></ul></div>
+   </div>
+   <p class="sample">Sample screens</p>
+  </div>
+ </div>
+ <svg class="ridge" viewBox="0 0 1440 170" preserveAspectRatio="none" aria-hidden="true"><path d="M0 170V118l120-46 90 34 150-78 110 58 80-30 170 92 140-70 120 40 160-96 140 74 100-30 60 20v104z" fill="#1E4A3E"/><path d="M0 170v-28l160-38 140 30 180-56 130 46 170-34 150 40 190-60 160 42 160-22v80z" fill="#F4F1EA"/></svg>
+</section>
+
+<section class="band" id="people">
+ <div class="wrap">
+  <p class="eyebrow">Who it helps</p>
+  <h2>One system. Three people who need different things.</h2>
+  <p class="lead" style="margin-top:16px">Most software is built for the person who buys it. We design for everyone who has to use it every day.</p>
+  <div class="grid3">
+   <div class="tile role"><h3>Employees</h3><p>Less to remember, more time doing the work they're good at.</p><ul><li>A clear daily list on their phone</li><li>Reminders, checklists and customer notes</li><li>Simple screens that take minutes to learn</li></ul></div>
+   <div class="tile role"><h3>Managers</h3><p>Fewer dropped balls and fewer status texts.</p><ul><li>Scheduling and team coordination in one place</li><li>Automatic follow-up on estimates and open jobs</li><li>Reports that show what needs attention today</li></ul></div>
+   <div class="tile role"><h3>Owners</h3><p>A business that runs and grows without you watching every step.</p><ul><li>Repeat customers, referrals and reviews tracked</li><li>One system in place of a stack of subscriptions</li><li>Clear numbers for every decision</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="band alt" id="build">
+ <div class="wrap">
+  <p class="eyebrow">What we build</p>
+  <h2>Everything a service business runs on, built around how you work.</h2>
+  <div class="grid3">
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div><h3>Custom CRM and operations</h3><p>Customer records, estimates, scheduling, jobs and invoices in one system shaped to your workflow, on phone and computer.</p></div>
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16v10H8l-4 4z"/></svg></div><h3>Customer retention</h3><p>Personal follow-up by text, email and mail that keeps customers coming back and referring friends. You approve every message.</p></div>
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><h3>Reputation management</h3><p>Review requests after every job, drafted replies to new reviews, and early warnings when a customer isn't happy.</p></div>
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg></div><h3>Online presence</h3><p>Websites, local search pages and business profile updates that turn the work you already do into reasons to call you.</p></div>
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><h3>Payments and integrations</h3><p>Card and bank payments, accounting, calendars and messaging connected, so data is entered once.</p></div>
+   <div class="tile"><div class="ico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Reporting</h3><p>Dashboards for revenue, close rates, repeat business and reviews, compared month over month and year over year.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="how">
+ <div class="wrap">
+  <p class="eyebrow">How we work</p>
+  <h2>Built with you, not handed to you.</h2>
+  <ol class="steps">
+   <li><h3>Learn</h3><p>We sit with owners, managers and the people in the field to see how work really moves today.</p></li>
+   <li><h3>Design</h3><p>We map your process into one system and decide together what to automate and what stays personal.</p></li>
+   <li><h3>Build and move in</h3><p>We bring over your customers and history, train your team and run alongside the old tools until you're ready.</p></li>
+   <li><h3>Improve</h3><p>Regular check-ins turn what you learn into new features, so the system keeps up with the business.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="band dark">
+ <div class="wrap">
+  <p class="eyebrow">Industries</p>
+  <h2>Made for businesses that live on relationships.</h2>
+  <p class="lead" style="margin-top:16px">Our systems start inside real owner-run businesses before they reach anyone else.</p>
+  <div class="grid3">
+   <div class="tile"><span class="pill">Field service</span><h3>Tree care and home services</h3><p>Estimates, crews, scheduling, reminders and review requests after every job.</p></div>
+   <div class="tile"><span class="pill">Real estate</span><h3>Agents and small offices</h3><p>Lifetime follow-up with past clients that earns referrals without wearing out the welcome.</p></div>
+   <div class="tile"><span class="pill">Fitness</span><h3>Studios and gyms</h3><p>Member retention, win-backs, events and the busy front desk, handled in one place.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap split">
+  <div>
+   <p class="eyebrow">What we believe</p>
+   <h2>Technology should give people their time back.</h2>
+   <p class="lead" style="margin-top:16px">We build apps for the web, the Apple App Store and Google Play, and every one follows the same rules.</p>
+  </div>
+  <ul class="checks">
+   <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D6B5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Proven in real businesses first</b><span>Features are tested in working companies before customers see them.</span></div></li>
+   <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D6B5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Your customers stay yours</b><span>We never sell your data or market to your customers.</span></div></li>
+   <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D6B5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>People approve, software does the rest</b><span>Automation handles the routine; nothing important goes out without a person's OK.</span></div></li>
+   <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D6B5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b>Simple enough for the whole team</b><span>If the crew won't use it, it isn't done.</span></div></li>
+  </ul>
+ </div>
+</section>
+
+<section class="band" id="contact" style="padding-top:0">
+ <div class="wrap">
+  <div class="contact">
+   <div>
+    <h2>Tell us what's slowing your team down.</h2>
+    <p class="lead" style="margin-top:16px">Send a note about your business and the tools you use today. We'll reply with ideas, whether or not we're the right fit.</p>
+    <div class="ctas" style="margin-top:28px"><a class="btn solid" href="mailto:info@alpineconsultingoregon.com?subject=Custom%20CRM%20inquiry">Email info@alpineconsultingoregon.com</a></div>
+   </div>
+   <address>
+    <strong style="color:#fff">Alpine Consulting LLC</strong><br>
+    An Oregon limited liability company<br>
+    2050 Beavercreek Rd PMB 101-130<br>
+    Oregon City, OR 97045<br>
+    <a href="mailto:info@alpineconsultingoregon.com">info@alpineconsultingoregon.com</a>
+   </address>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>&copy; 2026 Alpine Consulting LLC. Oregon City, Oregon.</span>
+  <span><a href="privacy.html">Privacy policy</a></span>
+ </div>
+</footer>
+</body>
+</html>
